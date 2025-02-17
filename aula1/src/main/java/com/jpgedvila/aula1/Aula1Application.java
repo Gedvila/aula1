@@ -24,10 +24,18 @@ public class Aula1Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		Order order = new Order(1234,80.0,0.2);
+		Order order1 = new Order(1034,150.00,20);
+		Order order2 = new Order(2282,800.00,10);
+		Order order3 = new Order(1309,95.90,0.0);
 
-		System.out.println("Código do pedido: " + order.getCode());
-		System.out.println("Preço total do pedido: " + orderService.total(order));
+		System.out.println("Código do pedido: " + order1.getCode());
+		System.out.println("Preço total do pedido: " + orderService.total(order1));
+
+		System.out.println("Código do pedido: " + order2.getCode());
+		System.out.println("Preço total do pedido: " + orderService.total(order2));
+
+		System.out.println("Código do pedido: " + order3.getCode());
+		System.out.println("Preço total do pedido: " + orderService.total(order3));
 
 	}
 }
