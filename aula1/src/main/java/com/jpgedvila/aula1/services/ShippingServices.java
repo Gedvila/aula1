@@ -11,9 +11,9 @@ public class ShippingServices {
 
         double valor;
 
-        if (order.getBasic()<100){
+        if (order.getBasic()<100.00){
             valor = 20.0;
-        } else if (order.getBasic()>=100 & order.getBasic()<200) {
+        } else if (order.getBasic()>=100.00 && order.getBasic()<=200.00) {
             valor = 12.0;
         } else {
             valor = 0.0;
